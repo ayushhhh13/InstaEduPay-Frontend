@@ -1,50 +1,72 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { useRouter } from "next/navigation"
-import { Eye, EyeOff, LogIn } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Label } from "@/components/ui/label"
-import { authService } from "@/lib/services/auth-service"
-import Link from "next/link"
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { Eye, EyeOff, LogIn } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Label } from "@/components/ui/label";
+import { authService } from "@/lib/services/auth-service";
+import Link from "next/link";
 
 export default function LoginPage() {
-  const router = useRouter()
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-  const [showPassword, setShowPassword] = useState(false)
-  const [error, setError] = useState("")
-  const [isLoading, setIsLoading] = useState(false)
+  const router = useRouter();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleLogin = async (e) => {
-    e.preventDefault()
-    setError("")
-    setIsLoading(true)
+    e.preventDefault();
+    setError("");
+    setIsLoading(true);
 
     try {
-      const response = await authService.login({ email, password })
-      localStorage.setItem("token", response.access_token)
-      localStorage.setItem("user", JSON.stringify(response.user))
-      router.push("/dashboard")
+      const response = await authService.login({ email, password });
+      localStorage.setItem("token", response.access_token);
+      localStorage.setItem("user", JSON.stringify(response.user));
+      router.push("/dashboard");
     } catch (err) {
-      setError(err.response?.data?.message || "Login failed. Please check your credentials.")
+      setError(
+        err.response?.data?.message ||
+          "Login failed. Please check your credentials."
+      );
     } finally {
-      setIsLoading(false)
+      setIsLoading(false);
     }
-  }
+  };
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-muted/40">
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-1">
-          <CardTitle className="text-2xl font-bold text-center">School Payment Dashboard</CardTitle>
-          <CardDescription className="text-center">Enter your credentials to sign in to your account</CardDescription>
+          <p className="p-2 text-sm text-red-400 text-center text-muted-foreground">
+            This app uses a free Render backend, which may take up to 50 seconds
+            to respond if it's been inactive.
+          </p>
+          <CardTitle className="text-2xl font-bold text-center">
+            InstaEduPay
+          </CardTitle>
+          <CardDescription className="text-center">
+            Enter your credentials to sign in to your account
+          </CardDescription>
         </CardHeader>
         <form onSubmit={handleLogin}>
           <CardContent className="space-y-4">
-            {error && <div className="p-3 text-sm text-white bg-red-500 rounded-md">{error}</div>}
+            {error && (
+              <div className="p-3 text-sm text-white bg-red-500 rounded-md">
+                {error}
+              </div>
+            )}
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
               <Input
@@ -76,8 +98,14 @@ export default function LoginPage() {
                   className="absolute right-0 top-0 h-full px-3 py-2"
                   onClick={() => setShowPassword(!showPassword)}
                 >
-                  {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
-                  <span className="sr-only">{showPassword ? "Hide password" : "Show password"}</span>
+                  {showPassword ? (
+                    <EyeOff className="w-4 h-4" />
+                  ) : (
+                    <Eye className="w-4 h-4" />
+                  )}
+                  <span className="sr-only">
+                    {showPassword ? "Hide password" : "Show password"}
+                  </span>
                 </Button>
               </div>
             </div>
@@ -106,5 +134,5 @@ export default function LoginPage() {
         </div>
       </Card>
     </div>
-  )
+  );
 }
