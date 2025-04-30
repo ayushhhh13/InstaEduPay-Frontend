@@ -2,7 +2,7 @@
 
 🔗 **Live App:** [https://insta-edu-pay-frontend-41wdxiyeo.vercel.app](https://insta-edu-pay-frontend-41wdxiyeo.vercel.app)
 
-📂 **GitHub Repo:** [your-github-repo-link](https://github.com/ayushhhh13/insta-edu-pay-frontend)
+📂 **GitHub Repo:** [https://github.com/ayushhhh13/insta-edu-pay-frontend](https://github.com/ayushhhh13/insta-edu-pay-frontend)
 
 This project is the frontend module of the **School Payments and Dashboard System**, developed using **Next.js** and styled with **Tailwind CSS**. It interfaces with a secure backend to visualize, filter, and manage transaction data efficiently.
 
