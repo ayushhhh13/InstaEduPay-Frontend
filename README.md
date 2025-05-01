@@ -57,18 +57,18 @@ NEXT_PUBLIC_API_BASE_URL=https://instaedupay.onrender.com
 
 ## Core Features
 
-- 🔍 **Transactions Overview Page**
+-  **Transactions Overview Page**
   - Paginated and searchable table of all transactions.
   - Multi-select filters for `status`, `school_id`, and `date`.
   - Sortable columns (ascending/descending).
   - Filters persist in the URL (shareable views).
 
-- 🏫 **Transactions by School**
+-  **Transactions by School**
   - View transaction data filtered by `school_id`.
   - Dropdown/search-based school selection.
   - Dedicated route for each school view.
 
-- 📌 **Transaction Status Checker**
+-  **Transaction Status Checker**
   - Input `custom_order_id` to check live transaction status.
   - API: `/check-status?custom_order_id=...`
 
@@ -137,11 +137,11 @@ NEXT_PUBLIC_API_BASE_URL=https://instaedupay.onrender.com
 ### Real-time Data Visualisation:
 <img width="1470" alt="Screenshot 2025-04-30 at 3 51 29 PM" src="https://github.com/user-attachments/assets/ab86e093-1b82-4c47-9c43-7f0e0c0e4257" />
 
-## 🌐 Hosting & Deployment
+## Hosting & Deployment
 - Platform: Vercel
 - Live App: [https://insta-edu-pay-frontend.vercel.app](https://insta-edu-pay-frontend.vercel.app)
 
-## 📄 License
+## License
 This project is licensed under the MIT License.
 
 
