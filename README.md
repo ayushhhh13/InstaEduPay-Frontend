@@ -1,15 +1,15 @@
-# 🎓 InstaEduPay – Frontend
+# InstaEduPay – Frontend
 
 This project is the frontend module of the **School Payments and Dashboard System**, developed using **Next.js** and styled with **Tailwind CSS**. It interfaces with a secure backend to visualize, filter, and manage transaction data efficiently.
 
-## 🚀 Live API & Repo Links
-- 🔗 **Live App:** [https://insta-edu-pay-frontend.app](https://insta-edu-pay-frontend.vercel.app)
+## Live API & Repo Links
+- 🔗 **Live App:** [https://insta-edu-pay-frontend.vercel.app](https://insta-edu-pay-frontend.vercel.app)
 - 📂 **GitHub Repo:** [https://github.com/ayushhhh13/insta-edu-pay-frontend](https://github.com/ayushhhh13/insta-edu-pay-frontend)
 - 🔗 **Live API:** [https://instaedupay.onrender.com](https://instaedupay.onrender.com)
 
 ---
 
-## 🎯 Objective
+## Objective
 
 Develop a **responsive and user-friendly** interface for school administrators to:
 - Monitor and search payment transactions.
@@ -19,7 +19,7 @@ Develop a **responsive and user-friendly** interface for school administrators t
 
 ---
 
-## 🔧 Tech Stack
+## Tech Stack
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
@@ -31,7 +31,7 @@ Develop a **responsive and user-friendly** interface for school administrators t
 
 ---
 
-## 🚀 Project Setup
+## Project Setup
 
 ```bash
 # Clone the repository
@@ -55,7 +55,7 @@ NEXT_PUBLIC_API_BASE_URL=https://instaedupay.onrender.com
 
 
 
-## ✅ Core Features
+## Core Features
 
 - 🔍 **Transactions Overview Page**
   - Paginated and searchable table of all transactions.
@@ -72,19 +72,19 @@ NEXT_PUBLIC_API_BASE_URL=https://instaedupay.onrender.com
   - Input `custom_order_id` to check live transaction status.
   - API: `/check-status?custom_order_id=...`
 
-## 🎨 UI & UX Enhancements
+## UI & UX Enhancements
 
-- 🌓 **Dark Mode / Light Mode Toggle**
+-  **Dark Mode / Light Mode Toggle**
   - Clean UI switch to toggle themes.
   - Theme persists on refresh via localStorage.
 
-- 📊 **Real-Time Data Visualizations**
+-  **Real-Time Data Visualizations**
   - Dynamic charts using `Recharts` or `Chart.js`:
     - Line graph: transaction volume over time.
     - Pie chart: status distribution (Success, Pending, Failed).
     - Bar chart: school-wise collection summary.
 
-- 📱 **Responsive Design**
+-  **Responsive Design**
   - Fully responsive across mobile, tablet, and desktop.
   - Smooth navigation using Next.js routing.
 
@@ -139,7 +139,7 @@ NEXT_PUBLIC_API_BASE_URL=https://instaedupay.onrender.com
 
 ## 🌐 Hosting & Deployment
 - Platform: Vercel
-- Live App: [https://insta-edu-pay-frontend.app](https://insta-edu-pay-frontend.vercel.app)
+- Live App: [https://insta-edu-pay-frontend.vercel.app](https://insta-edu-pay-frontend.vercel.app)
 
 ## 📄 License
 This project is licensed under the MIT License.
