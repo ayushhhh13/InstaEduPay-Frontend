@@ -16,7 +16,7 @@ Develop a **responsive and user-friendly** interface for school administrators t
 - Check individual transaction statuses.
 - View school-specific transaction summaries.
 - Navigate efficiently with persistent filters and shareable URLs.
-
+ 
 ---
 
 ## Tech Stack
