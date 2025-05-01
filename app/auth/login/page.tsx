@@ -49,10 +49,6 @@ export default function LoginPage() {
     <div className="flex items-center justify-center min-h-screen bg-muted/40">
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-1">
-          <p className="p-2 text-sm text-red-400 text-center text-muted-foreground">
-            This app uses a free Render backend, which may take up to 50 seconds
-            to respond if it's been inactive.
-          </p>
           <CardTitle className="text-2xl font-bold text-center">
             InstaEduPay
           </CardTitle>
