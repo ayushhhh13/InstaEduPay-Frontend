@@ -49,11 +49,7 @@ NEXT_PUBLIC_API_BASE_URL=https://instaedupay.onrender.com
 ```
 
 ## Folder Structure
-<img width="334" alt="Screenshot 2025-04-30 at 3 56 03 PM" src="https://github.com/user-attachments/assets/ed0d29b6-1cb1-47ca-a2dd-c5a0ea781aff" />
-<img width="249" alt="Screenshot 2025-04-30 at 3 56 58 PM" src="https://github.com/user-attachments/assets/50bdc9ee-8727-42f5-a8bc-e7b49af04915" />
-<img width="372" alt="Screenshot 2025-04-30 at 3 57 14 PM" src="https://github.com/user-attachments/assets/cbcd5630-7749-4261-820a-10f5f1376a5a" />
-
-
+<img width="287" alt="Screenshot 2025-05-02 at 1 58 23 AM" src="https://github.com/user-attachments/assets/dfdc6e84-8b01-4c3a-a9a0-38404b584432" />
 
 ## Core Features
 
