@@ -4,7 +4,7 @@ This project is the frontend module of the **School Payments and Dashboard Syste
 
 ## Live API & Repo Links
 -  **Live App:** [https://insta-edu-pay-frontend.vercel.app](https://insta-edu-pay-frontend.vercel.app)
--  **GitHub Repo:** [https://github.com/ayushhhh13/insta-edu-pay-frontend](https://github.com/ayushhhh13/insta-edu-pay-frontend)
+-  **GitHub Repo:** [https://github.com/ayushhhh13/InstaEduPay-Frontend](https://github.com/ayushhhh13/InstaEduPay-Frontend)
 -  **Live API:** [https://instaedupay.onrender.com](https://instaedupay.onrender.com)
 
 ---
