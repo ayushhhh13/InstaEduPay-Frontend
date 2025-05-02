@@ -35,8 +35,8 @@ Develop a **responsive and user-friendly** interface for school administrators t
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/insta-edu-pay-frontend.git
-cd insta-edu-pay-frontend
+git clone [https://github.com/your-username/insta-edu-pay-frontend.git](https://github.com/ayushhhh13/InstaEduPay-Frontend.git)
+cd InstaEduPay-Frontend
 
 # Install dependencies
 npm install
